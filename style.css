@@ -139,6 +139,7 @@ svg {
 .img-wrap {
 	position: absolute;
 	width: 30%;
+	max-width: 410px;
 	margin-left: 34%;
 }
 
