@@ -136,23 +136,36 @@ svg {
 	left: 0;
 }
 
-.imgHome {
-	margin-top: 300px;
+.img-wrap {
 	position: absolute;
+	width: 30%;
+	max-width: 410px;
+	margin-left: 34%;
+}
+
+.img-home {
+	max-width: 410px;
+	width: 100%;
+	margin-top: 300px;
 	z-index: -1;
 }
 
-.imgDescription {
-  position: absolute;
-  color: black;
-  visibility: hidden;
-  opacity: 0;
-  text-align: right;
-  font-size: 12px;
+.img-interior {
+	max-width: 410px;
+	margin-left: 34%;
+}
+
+.img-description {
+	position: relative;
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	text-align: right;
+	font-size: 12px;
 }
 
 
-.imgWrap:hover .imgDescription {
+.img-wrap:hover .img-description {
   visibility: visible;
   opacity: 1;
 }
@@ -214,17 +227,6 @@ img.portrait {
 		font-size: 16px;
 		margin-top: 120px;
 	}
-
-	.imgHome {
-		width: 210px;
-		right: 10%;
-	}
-
-	.imgDescription {
-	  position: absolute;
-	  margin-top: 430px;
-	  right: 10%;
-	}
 }
 
 @media (min-width: 480px) {
@@ -242,16 +244,5 @@ img.portrait {
 
 	#ct {
 		margin-top: 220px;
-	}
-
-	.imgHome {
-		width: 410px;
-		right: 13%;
-	}
-
-	.imgDescription {
-	  position: absolute;
-	  margin-top: 540px;
-	  right: 13%;
 	}
 }
