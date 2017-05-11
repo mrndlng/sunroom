@@ -210,6 +210,12 @@ img.portrait {
 	width: 53%;
 }
 
+img.portrait-pair {
+	width: 40%;
+	float: left;
+	margin-bottom: 2em;
+}
+
 #redCorn {
 	background-image: url('img/current/_MG_4262.jpg')
 }
@@ -238,6 +244,7 @@ img.portrait {
 
 	.bigger {
 		font-size: 20px;
+		clear: both;
 	}
 
 	.pureText {
