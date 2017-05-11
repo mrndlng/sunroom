@@ -236,6 +236,10 @@ img.portrait {
 		font-size: 16px;
 	}
 
+	.bigger {
+		font-size: 20px;
+	}
+
 	.pureText {
 		font-size: 16px;
 		margin-top: 120px;
