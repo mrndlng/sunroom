@@ -153,13 +153,13 @@ svg {
 
 .img-wrap {
 	position: absolute;
-	width: 25%;
+	width: 50%;
 	max-width: 410px;
 	margin-left: 35%;
 }
 
 .img-home {
-	max-width: 350px;
+	/* max-width: 350px; */
 	width: 100%;
 	margin-top: 180px;
 	z-index: -1;
