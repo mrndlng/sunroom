@@ -153,9 +153,10 @@ svg {
 
 .img-wrap {
 	position: absolute;
-	width: 50%;
-	max-width: 800px;
-	margin-left: 35%;
+	/* width: 50%; */
+	/* max-width: 800px; */
+	margin-left: 25%;
+	margin-right: 5%;
 }
 
 .img-home {
@@ -165,12 +166,12 @@ svg {
 	z-index: -1;
 }
 
-.img-interior {
-	max-width: 350px;
-	margin-left: 35%;
-	width: 25%;
-	position: absolute;
-	margin-top: 200px;
+.img-second {
+	/* max-width: 350px; */
+	width: 20%;
+	margin-top: 80px;
+	z-index: -1;
+	float: left;
 }
 
 .img-description {
@@ -182,10 +183,17 @@ svg {
 	font-size: 12px;
 }
 
-
 .img-wrap:hover .img-description {
   visibility: visible;
   opacity: 1;
+}
+
+.img-interior {
+	max-width: 350px;
+	margin-left: 35%;
+	width: 25%;
+	position: absolute;
+	margin-top: 200px;
 }
 
 div.gallery img {
