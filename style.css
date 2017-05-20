@@ -32,6 +32,15 @@ body {
 	margin-top: 220px;
 }
 
+.container {
+    width:100%;
+}
+
+.container .exhibitionslist {
+    display: none;
+    padding : 5px;
+}
+
 .sunroom {
 	-ms-transform: rotate(-9deg);
 	-webkit-transform: rotate(-9deg);

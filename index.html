@@ -5,17 +5,26 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="shortcut icon" type="image/ico" href="favicon-01.png">
 <meta name="viewport" content="width=device-width" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
 <h1 class="sunroom">The SunRoom</h1>
 
 <section class="content">
+
 <nav class="home">
 	<ul>
-		<li><a href="current.html">Current</a></li>
-		<li><a href="upcoming.html">Upcoming</a></li>
-		<li><a href="past.html">Past</a></li>
+		<div class="container">
+    	<div class="exhibitions">Exhibitions</div>
+    	<div class="exhibitionslist">
+    	<ul>
+        <li><a href="current.html">Current</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="past.html">Past</a></li>
+        </ul>
+    	</div>
+		</div>
 		<li><a href="sunroomspecial.html">&#9788</a></li>
 		<li><a href="info.html">Info</a></li>
 	</ul>
@@ -36,6 +45,23 @@
 <circle cx="225" cy="225" r="205" />
 </svg>
 </div>
+
+<script>
+$(".exhibitions").click(function () {
+    $header = $(this);
+    //getting the next element
+    $exhibitionslist = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $exhibitionslist.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $header.text(function () {
+            //change text based on condition
+            return $exhibitionslist.is(":visible") ? "Exhibitions" : "Exhibitions";
+        });
+    });
+});
+</script>
 
 </body>
 </html>
