@@ -49,6 +49,10 @@ body {
 	font-weight: lighter;
 }
 
+.exhibitions:hover{
+	text-decoration: underline;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -162,10 +166,16 @@ svg {
 
 .img-wrap {
 	position: absolute;
-	/* width: 50%; */
-	/* max-width: 800px; */
+}
+
+#main {
 	margin-left: 25%;
 	margin-right: 5%;
+}
+
+#editions {
+	margin-right: 5%;
+	margin-top: 400px;
 }
 
 .img-home {
@@ -178,18 +188,22 @@ svg {
 .img-second {
 	/* max-width: 350px; */
 	width: 20%;
-	margin-top: 80px;
 	z-index: -1;
-	float: left;
 }
 
 .img-description {
-	position: relative;
 	color: black;
 	visibility: hidden;
 	opacity: 0;
-	text-align: right;
 	font-size: 12px;
+}
+
+#mainText {
+	text-align: right;
+}
+
+#editionsText {
+	text-align: left;
 }
 
 .img-wrap:hover .img-description {
